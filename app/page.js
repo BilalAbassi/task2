@@ -17,10 +17,12 @@ export default function Home() {
   });
 
   // for Handling State  data
+
   const handleInput = (event) => {
     setdata({ ...data, [event.target.name]: event.target.value });
   };
 
+  // fro validation
   const save =
     Boolean(data.name) &&
     Boolean(data.website) &&
